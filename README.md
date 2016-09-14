@@ -24,3 +24,8 @@ Instructions:
 Expected Result:
 ===================
 The browser should send you a compiled "class" file
+
+Credits:
+========================
+https://github.com/jpalomaki/compiler
+
