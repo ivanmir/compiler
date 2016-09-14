@@ -7,8 +7,10 @@ This was designed to run on top of an HCP or Tomcat 8 Profile. Test it under you
 
 Please upload the required libraries at WEB-INF/lib folder in order to compile.
 
-<path to your project>\WebContent\WEB-INF\lib\commons-io-2.5.jar
-<path to your project>\WebContent\WEB-INF\lib\guava-19.0.jar
+<ul>
+	<li>&lt;path to your project&gt;WebContent\WEB-INF\lib\commons-io-2.5.jar</li>
+	<li>&lt;path to your project&gt;WebContent\WEB-INF\lib\guava-19.0.jar</li>
+</ul>
 
 The form displays a java class file that uses annotations from Google's Guava library.
 So Guava Lib is required no just to build the application, but it is also used to compile the class in runtime.
