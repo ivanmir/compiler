@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Compiler</title>
+</head>
+<body>
+    <form action="compile" method="post">
+        <p>Source code:</p>
+        <textarea rows="20" cols="50" name="source">
+import com.google.common.annotations.Beta;
+
+@Beta
+class Foo {
+}
+        </textarea>
+        <p>Classpath (e.g. <code>/path/to/1.jar:/path/to/another.jar</code>)</p>
+        <input size="75" name="classpath" value="/WEB-INF/lib/guava-19.0.jar"><br><br>
+        <input type="submit" value="Compile">
+    </form>
+</body>
+</html>
