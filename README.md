@@ -3,7 +3,7 @@ HCP Java Compiler
 
 Use case for JavaCompiler - to provide the means to compile generated Java classes using custom JAR files as classpaths.
 
-This will only work under HCP, or Linux boxes, as it uses ":" as separator for classpath folders.
+This was designed to run on top of an HCP or Tomcat 8 Profile. Test it under your own for other platforms. 
 
 Please upload the required libraries at WEB-INF/lib folder in order to compile.
 
