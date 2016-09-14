@@ -15,9 +15,11 @@ So Guava Lib is required no just to build the application, but it is also used t
 
 Instructions:
 ==================
-1) Place your custom jar file under "WEB-INF/lib" folder
-2) Add the required <code> to the input box on the form (index.html) - making use of your custom lib
-3) Add the relative path to the inputbox below. <-- currently it only supports just one JAR file - don't add more than one entry here. The application takes care of checking the path to it and add it to the current classpath in HCP's runtime.
+<ol>
+  <li>Place your custom jar file under "WEB-INF/lib" folder</li>
+  <li>Add the required <code> to the input box on the form (index.html) - making use of your custom lib</li>
+  <li>Add the relative path to the inputbox below. <-- currently it only supports just one JAR file - don't add more than one entry here. The application takes care of checking the path to it and add it to the current classpath in HCP's runtime.</li>
+</ol>
 
 Expected Result:
 ===================
