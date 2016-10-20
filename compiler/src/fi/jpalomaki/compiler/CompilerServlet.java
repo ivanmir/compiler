@@ -46,9 +46,11 @@ public final class CompilerServlet extends HttpServlet {
             File javaFile = createTempFile("tmp", ".java", workingDirectory);
             extractSourceCodeAndSaveToJavaFile(request, javaFile);
             String jarpath = request.getParameter("classpath1");
-            jarpath = this.getServletContext().getRealPath(jarpath);
-            String classpath = System.getProperty("java.class.path") + File.pathSeparator + jarpath;
             
+            jarpath = this.getServletContext().getRealPath(jarpath);
+            
+            
+            String classpath = System.getProperty("java.class.path") + File.pathSeparator + jarpath;
             
             if (Files.isReadable(Paths.get(jarpath))) {
                 File classFile = compile(javaFile, classpath);
@@ -56,6 +58,9 @@ public final class CompilerServlet extends HttpServlet {
             } else {
             	response.getWriter().println("Unable to find jar file at specified path: " + jarpath);
             }
+            
+            
+
 
         } finally {
             FileUtils.deleteQuietly(workingDirectory);
