@@ -17,7 +17,7 @@
 
 		<!-- Property that holds supported JDK version for the given SAP HANA Cloud 
 			SDK -->
-		<sap.cloud.jdk.version>1.7</sap.cloud.jdk.version>
+		<sap.cloud.jdk.version>1.8</sap.cloud.jdk.version>
 
 		<!-- Properties that hold information on your SAP HANA Cloud account -->
 		<sap.cloud.host>${env.SAP_CLOUD_HOST}</sap.cloud.host>
