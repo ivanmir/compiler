@@ -17,7 +17,7 @@
 
 		<!-- Property that holds supported JDK version for the given SAP HANA Cloud 
 			SDK -->
-		<sap.cloud.jdk.version>1.8</sap.cloud.jdk.version>
+		<sap.cloud.jdk.version>1.7</sap.cloud.jdk.version>
 
 		<!-- Properties that hold information on your SAP HANA Cloud account -->
 		<sap.cloud.host>${env.SAP_CLOUD_HOST}</sap.cloud.host>
@@ -201,13 +201,11 @@
 									<rules>
 										<requireProperty>
 											<property>proxy.host</property>
-											<message>Environment variable PROXY_HOST is missing, but
-												required!</message>
+											<message>Environment variable PROXY_HOST is missing, but required!</message>
 										</requireProperty>
 										<requireProperty>
 											<property>proxy.port</property>
-											<message>Environment variable PROXY_PORT is missing, but
-												required!</message>
+											<message>Environment variable PROXY_PORT is missing, but required!</message>
 										</requireProperty>
 									</rules>
 								</configuration>
