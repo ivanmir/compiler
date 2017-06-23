@@ -1,7 +1,8 @@
 language: java
 jdk:
 - openjdk7
-after_script:
-  - if [[ $TRAVIS_PULL_REQUEST == 'false' && $TRAVIS_BRANCH == 'master' ]]; then bash .travis/push production || exit $?; fi
+script:
+  cd compiler
+  mvn clean verify
 notifications:
   email: true
