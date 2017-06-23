@@ -8,8 +8,7 @@
 	<properties>
 		<!-- Properties that hold host and port of proxy should you have one - 
 			otherwise remove all occurrences of the properties -->
-		<!-- <proxy.host>proxy-trial.od.sap.biz</proxy.host>
-		<proxy.port>8080</proxy.port> -->
+		<!-- <proxy.host>proxy-trial.od.sap.biz</proxy.host> <proxy.port>8080</proxy.port> -->
 
 		<!-- Properties that hold information on the location and version of the 
 			SAP HANA Cloud Platform SDK -->
@@ -46,7 +45,7 @@
 		<!-- The SAP Cloud Platform Java Web Tomcat 8 API -->
 		<dependency>
 			<groupId>com.sap.cloud</groupId>
-			<artifactId>neo-java-web-api</artifactId>
+			<artifactId>neo-java-web-sdk</artifactId>
 			<version>${sap.cloud.sdk.version}</version>
 			<scope>provided</scope>
 		</dependency>
@@ -71,6 +70,9 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
 				<version>3.1.0</version>
+				<configuration>
+					<webXml>WebContent\WEB-INF\web.xml</webXml>
+				</configuration>
 			</plugin>
 
 			<!-- Set compiler to officially supported JDK version for the given SAP 
