@@ -3,6 +3,6 @@ jdk:
 - openjdk7
 script:
   cd compiler
-  mvn clean verify
+  mvn clean verify install
 notifications:
   email: true
