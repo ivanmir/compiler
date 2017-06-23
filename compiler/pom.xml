@@ -13,7 +13,7 @@
 		<!-- Properties that hold information on the location and version of the 
 			SAP HANA Cloud Platform SDK -->
 		<sap.cloud.sdk.path>${project.build.directory}/sdk</sap.cloud.sdk.path>
-		<sap.cloud.sdk.version>3.30.16</sap.cloud.sdk.version>
+		<sap.cloud.sdk.version>3.29.11.3</sap.cloud.sdk.version>
 
 		<!-- Property that holds supported JDK version for the given SAP HANA Cloud 
 			SDK -->
@@ -45,7 +45,7 @@
 		<!-- The SAP Cloud Platform Java Web Tomcat 8 API -->
 		<dependency>
 			<groupId>com.sap.cloud</groupId>
-			<artifactId>neo-java-web-sdk</artifactId>
+			<artifactId>neo-java-web-api</artifactId>
 			<version>${sap.cloud.sdk.version}</version>
 			<scope>provided</scope>
 		</dependency>
