@@ -2,7 +2,6 @@ language: java
 jdk:
 - openjdk7
 script:
-  cd compiler
-  mvn clean verify install
+  cd compiler && mvn clean verify install
 notifications:
   email: true
